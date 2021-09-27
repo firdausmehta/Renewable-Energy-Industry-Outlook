@@ -5,7 +5,9 @@
 
 * https://www.eia.gov/state/seds/seds-data-complete.php
 
-* https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#PricesExpenditures 
+* https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#PricesExpenditures
+
+* https://www.kaggle.com/washimahmed/usa-latlong-for-state-abbreviations
 
 
 ### Description
