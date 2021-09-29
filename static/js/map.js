@@ -35,3 +35,16 @@ L.geoJson(statesData).addTo(map);
 
 //  assign our data route to a variable
 var data_url = "/api/state_energy";
+
+// create function that assigns colors for map & legend
+function getColor(d) {
+    return  d >       0  ? "#90e893":
+            d > -100000  ? "#faffc7":
+            d > -300000  ? "#f4ff73":
+            d > -500000  ? "#fffb00":
+            d > -1000000 ? "#ff9500":
+            d > -2000000 ? "#f23c05":
+            d > -3000000 ? "#DF1418":
+            d > -5000000 ? "#b30505":
+                           "#690202"                                  
+}     
