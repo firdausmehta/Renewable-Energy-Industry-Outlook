@@ -23,3 +23,15 @@ function reZoomMap() {
         map.setView([37.8, -96], 4);
     }
 }
+
+// add light tile layer
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
+    id: 'mapbox/light-v9',
+    attribution: "UNC Bootcamp"
+}).addTo(map);
+
+//  add states lines data to the map
+L.geoJson(statesData).addTo(map);
+
+//  assign our data route to a variable
+var data_url = "/api/state_energy";
