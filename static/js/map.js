@@ -48,3 +48,16 @@ function getColor(d) {
             d > -5000000 ? "#b30505":
                            "#690202"                                  
 }     
+
+// Create Function for making the Map Legend
+function makeLegend(map) {
+
+    var legend = L.control({position: 'bottomright'});
+        
+    legend.onAdd = function (map) {
+        // create a div for the legend
+        var div = L.DomUtil.create('div', 'info legend');
+            div.innerHTML += "<p><strong>Energy Difference <br>(in Billions of Btus)</br><strong></p>";
+            grades = [ 2, -100000,-300000, -500000, -1000000, -3000000, -5000000]
+            labels = [];
+            grades1 = ["0 >","> -100,000","> -300,000", "> -500,000","> -1,000,000", "> -3,000,000", "> -5,000,000"]
