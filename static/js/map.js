@@ -173,4 +173,13 @@ Promise.all([makeMap(2021), makeMap(2025), makeMap(2030)]).then(layers => {
         2025: layer_2025,
         2030: layer_2030
     }
-    
+
+
+    // default is 2021
+    layer_2021.addTo(map);
+    makeLegend(map);
+
+    L.control.layers(baseMaps).addTo(map)
+
+
+})
