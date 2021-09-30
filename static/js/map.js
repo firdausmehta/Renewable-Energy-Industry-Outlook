@@ -94,4 +94,20 @@ function makeMap(year) {
                 }
             };
 
+            // grab energy difference min and max values to create the color scale
+            var min = Math.min.apply(null, data.difference);
+            var max = Math.max.apply(null, data.difference);
+        
+            console.log('min, max:', min, max);
+        
+            // create style function 
+            function style(feature) {
+                return {
+                    fillColor: getColor(feature.properties.energy_difference),
+                    weight: 2,
+                    opacity: 0.8,
+                    color: 'gray',
+                    fillOpacity: 0.8
+                };
+            }
             
