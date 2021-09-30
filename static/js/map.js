@@ -61,3 +61,16 @@ function makeLegend(map) {
             grades = [ 2, -100000,-300000, -500000, -1000000, -3000000, -5000000]
             labels = [];
             grades1 = ["0 >","> -100,000","> -300,000", "> -500,000","> -1,000,000", "> -3,000,000", "> -5,000,000"]
+
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+        for (var i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+                '<i style="background:' + getColor(grades[i] - 1) + '"></i> ' + 
+                grades1[i] + '<br>' ;
+        }        
+        return div;
+    };
+
+    legend.addTo(map)
+}
