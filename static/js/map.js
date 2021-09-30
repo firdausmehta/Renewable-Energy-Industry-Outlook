@@ -74,3 +74,24 @@ function makeLegend(map) {
 
     legend.addTo(map)
 }
+
+// Create a Function that will make the map layer according to the Year Selected in the Map Control in the top right corner
+function makeMap(year) {
+    return new Promise((resolve, reject) => {
+        d3.json(data_url, function(data){
+    
+            // loop through our data and join with states data
+            for(var i = 0; i < data.length; i++) {
+                for(var j = 0; j < statesData.features.length; j++) {
+                    if(data[i].state === statesData.features[j].properties.name && data[i].year == year) {
+                        statesData.features[j].properties.energy_difference = data[i].difference;
+                        statesData.features[j].properties.produced_renewable = data[i].produced_renewable;
+                        statesData.features[j].properties.total_consumed= data[i].total_consumed;
+                        statesData.features[j].properties.population= data[i].population;
+                        statesData.features[j].properties.energy_price= data[i].energy_price;
+                        statesData.features[j].properties.year= data[i].year;
+                    }
+                }
+            };
+
+            
