@@ -139,4 +139,19 @@ function makeMap(year) {
                  "<p><strong>Population:\xa0  </strong>" + numeral((feature.properties.population) * 1000).format('0,0.0') + "</p>" +
                  "<p><strong>Energy Price ($ per Bil. Btus):\xa0\xa0  </strong>" + numeral((feature.properties.energy_price)/1000).format('$0,0.00') + "</p>" +
                  "<p><strong>Year:\xa0  </strong>" + (feature.properties.year) + "</p>";
+
                  
+                 // add the popup to the map and set location
+                layer.bindPopup(popupHtml, { className: 'popup', 'offset': L.point(0, -20) });
+            }
+        
+            //  add the style and onEachFeature function to the map
+            resolve(geojson = L.geoJson(statesData, {
+                style: style,
+                onEachFeature: onEachFeature
+            }));
+            
+            // .addTo(map);
+        });
+    })
+};
