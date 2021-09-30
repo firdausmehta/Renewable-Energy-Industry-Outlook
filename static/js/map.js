@@ -155,3 +155,22 @@ function makeMap(year) {
         });
     })
 };
+
+
+
+
+
+
+
+Promise.all([makeMap(2021), makeMap(2025), makeMap(2030)]).then(layers => {
+    var layer_2021 = layers[0]
+    var layer_2025 = layers[1]
+    var layer_2030 = layers[2]
+    // array destructuring for fun and less typing;
+    // var [layer_2021, layer_2025, layer_2030] = layers;
+    var baseMaps = {
+        2021: layer_2021,
+        2025: layer_2025,
+        2030: layer_2030
+    }
+    
