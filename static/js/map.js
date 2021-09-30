@@ -121,3 +121,13 @@ function makeMap(year) {
                         dashArray: '',
                         fillOpacity: 1
                     });
+
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        this.bringToFront();
+                    }
+                    layer.openPopup();
+                }).on('mouseout', function(e) {
+                    geojson.resetStyle(e.target);
+                    layer.closePopup();
+                });
+                
