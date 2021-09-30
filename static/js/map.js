@@ -110,4 +110,14 @@ function makeMap(year) {
                     fillOpacity: 0.8
                 };
             }
-            
+
+              
+            // add mouseover event for each feature to style and show popup
+              function onEachFeature(feature, layer) {
+                layer.on('mouseover', function(e) {
+                    layer.setStyle({
+                        weight: 5,
+                        color: '#666',
+                        dashArray: '',
+                        fillOpacity: 1
+                    });
