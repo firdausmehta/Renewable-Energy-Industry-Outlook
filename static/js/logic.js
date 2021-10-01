@@ -60,4 +60,12 @@ d3.json(url, function(data){
          bargap: 0.15,
          bargroupgap: 0.1
        };
-       
+
+       var config = {responsive: true}
+
+       // Render the plot to the div tag with id "plot"
+       Plotly.newPlot("plot1", data, layout, config);
+   
+   });
+
+   
