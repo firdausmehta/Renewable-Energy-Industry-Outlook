@@ -81,4 +81,20 @@ Plotly.d3.csv("static/csv/us_combined.csv", function(err, rows){
     var frames = []
     var x = unpack(rows, 'Year')
     var y = unpack(rows, 'Difference')
-    
+
+    var n = 100;
+    for (var i = 0; i < n; i++) {
+      frames[i] = {data: [{x: [], y: []}]}
+      frames[i].data[0].x = x.slice(0, i+1);
+      frames[i].data[0].y = y.slice(0, i+1);
+    }
+    //  create the plot  and set features
+    Plotly.newPlot('plot', [{
+      x: frames[1].data[0].x,
+      y: frames[1].data[0].y,
+      fill: 'tozeroy',
+      type: 'scatter',
+      mode: 'lines',
+      line: {color: 'red'},
+    }], {
+        
