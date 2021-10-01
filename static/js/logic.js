@@ -27,4 +27,37 @@ d3.json(url, function(data){
         name: "Total Energy Consumption",
         marker: {color: 'rgb(55, 83, 109)'},
     }
-    
+
+     // create the data array
+     data =  [trace1, trace2]
+
+     //  set layout features
+     var layout = {
+         xaxis: {
+             title : "Year",
+             tickfont: {
+             size: 14,
+             color: 'rgb(107, 107, 107)'
+           }},
+         yaxis: {
+           title: 'Billion BTU',
+           titlefont: {
+             size: 16,
+             color: 'rgb(107, 107, 107)'
+           },
+           tickfont: {
+             size: 14,
+             color: 'rgb(107, 107, 107)'
+           }
+         },
+         legend: {
+           x: 0,
+           y: 1.5,
+           bgcolor: 'rgba(255, 255, 255, 0)',
+           bordercolor: 'rgba(255, 255, 255, 0)'
+         },
+         barmode: 'group',
+         bargap: 0.15,
+         bargroupgap: 0.1
+       };
+       
