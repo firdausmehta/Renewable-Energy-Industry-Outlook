@@ -19,4 +19,12 @@ d3.json(url, function(data){
         marker: {color: 'rgb(26, 118, 255)'},
         
     };
+
+    var trace2= {
+        x: year,
+        y:  total_consumed,
+        type: "bar",
+        name: "Total Energy Consumption",
+        marker: {color: 'rgb(55, 83, 109)'},
+    }
     
