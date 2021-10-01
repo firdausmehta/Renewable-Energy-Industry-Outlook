@@ -69,3 +69,16 @@ d3.json(url, function(data){
    });
 
    
+   // ///////////////////////////////////////////////////////////////
+
+//  select the data for differrence plot
+Plotly.d3.csv("static/csv/us_combined.csv", function(err, rows){
+    //  get the rows
+    function unpack(rows, key) {
+    return rows.map(function(row) { return row[key]; });
+  }
+    //  unpack year annd difference values
+    var frames = []
+    var x = unpack(rows, 'Year')
+    var y = unpack(rows, 'Difference')
+    
