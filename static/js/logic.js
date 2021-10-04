@@ -192,4 +192,17 @@ d3.json(url_state, function(data){
               .text(state)
               .property("value", state);
           });
-          
+
+           // display default plots
+  getPlot(filtered[0], data);
+  getPlot2(filtered[0], data);
+
+// create a function that displays plots by selected states
+  function getPlot(value, data){
+    //  assign the variables 
+    var year = data.map(item => value === item.state && item.year );
+    var renewable = data.map(item => value === item.state && item.produced_renewable);
+    var consumed = data.map(item  => value == item.state && item.total_consumed);
+
+    console.log(renewable)
+    
