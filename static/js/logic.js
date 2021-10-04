@@ -156,4 +156,19 @@ Plotly.d3.csv("static/csv/us_combined.csv", function(err, rows){
     });
   
   })
-  
+
+
+  // ////////////////////////////////////////
+
+// create plots  for states
+// select the states data
+
+var url_state = "/api/state_energy";
+
+d3.json(url_state, function(data){
+  console.log(data)
+  document.getElementById("selDataset").addEventListener("change", function() {
+    var value = this[this.selectedIndex].value;
+    getPlot(value, data);
+    getPlot2(value, data);
+  })
