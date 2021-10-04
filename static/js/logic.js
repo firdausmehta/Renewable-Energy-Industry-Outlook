@@ -172,3 +172,11 @@ d3.json(url_state, function(data){
     getPlot(value, data);
     getPlot2(value, data);
   })
+  //  select and get dropdown variable
+  var dropdown = d3.select("#selDataset");
+
+  //  create states variable
+  var states = data.map(item => item.state)
+
+  console.log(states)
+  
