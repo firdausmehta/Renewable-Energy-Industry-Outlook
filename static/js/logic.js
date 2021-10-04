@@ -179,4 +179,17 @@ d3.json(url_state, function(data){
   var states = data.map(item => item.state)
 
   console.log(states)
-  
+
+   // select the data for the dropdwown menu
+   var filtered = states.filter(function(item, pos){
+    return states.indexOf(item)== pos; 
+  });
+  console.log(filtered)
+  //  add states to dropdown menu
+  filtered.forEach( state => {
+              dropdown
+              .append("option")
+              .text(state)
+              .property("value", state);
+          });
+          
