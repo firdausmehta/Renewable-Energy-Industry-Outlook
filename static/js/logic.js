@@ -97,4 +97,63 @@ Plotly.d3.csv("static/csv/us_combined.csv", function(err, rows){
       mode: 'lines',
       line: {color: 'red'},
     }], {
-        
+      title: "Difference Between Renewable Production and Total Consumed Energy",
+      xaxis: {
+        title:"Year",
+        range: [
+          1970, 2030
+        ]
+      },
+      yaxis: {
+        title: "Difference(Bil. BTU)",
+        range: [
+          -110506126.9,
+          90
+        ]
+      },
+      updatemenus: [{
+        x: 0.1,
+        y: 0,
+        yanchor: "top",
+        xanchor: "right",
+        showactive: false,
+        direction: "left",
+        type: "buttons",
+        pad: {"t": 87, "r": 10},
+        buttons: [{
+          method: "animate",
+          args: [null, {
+            fromcurrent: true,
+            transition: {
+              duration: 0,
+            },
+            frame: {
+              duration: 40,
+              redraw: false
+            }
+          }],
+          label: "Play"
+        }, {
+          method: "animate",
+          args: [
+            [null],
+            {
+              mode: "immediate",
+              transition: {
+                duration: 0
+              },
+              frame: {
+                duration: 0,
+                redraw: false
+              }
+            }
+          ],
+          label: "Pause"
+        }]
+      }]
+    }).then(function() {
+      Plotly.addFrames('plot', frames);
+    });
+  
+  })
+  
