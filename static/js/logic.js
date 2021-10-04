@@ -205,4 +205,20 @@ d3.json(url_state, function(data){
     var consumed = data.map(item  => value == item.state && item.total_consumed);
 
     console.log(renewable)
+
+    // create the traces
+    var s_trace1 = {
+      x: year,
+      y: renewable,
+      fill: 'tonexty',
+      type: 'scatter',
+      name: "Renewable Production",
+      mode: 'lines',
+      line: {
+        dash: 'solid',
+        width: 8
+      },
+      marker: {color: 'green'}
+      
+    };
     
