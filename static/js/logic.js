@@ -250,4 +250,11 @@ d3.json(url_state, function(data){
       }
     
     };
+
+     //  create the state_data varriable
+     state_data = [s_trace1, s_trace2];
     
+     // create the plot
+     Plotly.newPlot("plot2",state_data, layout);
+   }
+ 
