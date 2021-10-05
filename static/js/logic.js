@@ -236,4 +236,18 @@ d3.json(url_state, function(data){
       },
       marker: {color: 'orange'}
     }
+
+     //  set the layout
+     var layout  = {
+      title: "Renewable Production vs Total Energy Consumption",
+      xaxis:{
+        title:"Year",
+        tickmode: "linear",
+        dtick: 10
+      },
+      yaxis:{
+        title:"Billion BTU"
+      }
+    
+    };
     
