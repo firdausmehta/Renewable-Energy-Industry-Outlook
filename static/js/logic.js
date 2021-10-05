@@ -222,3 +222,18 @@ d3.json(url_state, function(data){
       
     };
     
+    var s_trace2 = {
+      x: year,
+      y: consumed,
+      fill: 'tozeroy',
+      type: "scatteer",
+      name: "Total Consumption",
+      mode: 'lines',
+      // name: 'Solid',
+      line: {
+      dash: 'solid',
+      width: 8
+      },
+      marker: {color: 'orange'}
+    }
+    
