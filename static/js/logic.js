@@ -291,4 +291,10 @@ d3.json(url_state, function(data){
       },
       
     };
-    
+
+    state_data = [s_trace4];
+    //  create the plot
+    Plotly.newPlot("plot3",state_data, layout);
+  };
+  
+}); 
