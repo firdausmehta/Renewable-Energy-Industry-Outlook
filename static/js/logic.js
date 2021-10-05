@@ -257,4 +257,11 @@ d3.json(url_state, function(data){
      // create the plot
      Plotly.newPlot("plot2",state_data, layout);
    }
- 
+
+   // create the second function that gets the price plot for the states
+  function getPlot2(value, data){
+    
+    var year = data.map(item => value === item.state && item.year );
+    var population = data.map(item => value === item.state && item.population);
+    var price = data.map(item  => value === item.state && item.energy_price);
+    
