@@ -264,4 +264,18 @@ d3.json(url_state, function(data){
     var year = data.map(item => value === item.state && item.year );
     var population = data.map(item => value === item.state && item.population);
     var price = data.map(item  => value === item.state && item.energy_price);
-    
+
+     // set the trace variable
+     var s_trace4 = {
+      x: year,
+      y: price,
+      name: "Price",
+      mode: 'lines',
+      line: {
+      dash: 'solid',
+      width: 6
+      },
+      marker:{
+        color: "rgb(55, 83, 109)"
+      }
+    };
