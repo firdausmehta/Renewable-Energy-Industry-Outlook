@@ -279,3 +279,16 @@ d3.json(url_state, function(data){
         color: "rgb(55, 83, 109)"
       }
     };
+
+     //  set the layout for the plot
+     var layout  = {
+      title: "Average Price",
+      xaxis:{
+        title:"Year"
+      },
+      yaxis:{
+        title:"$/million BTU"
+      },
+      
+    };
+    
