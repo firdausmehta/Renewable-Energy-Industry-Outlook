@@ -43,3 +43,22 @@ Us_Energy = Base.classes.us_energy
 @app.route("/")
 def landing_page():
     return render_template("index.html", API_KEY=os.environ["API_KEY"])
+
+
+# data routes
+# state energy route
+@app.route("/api/state_energy")
+def get_state_energy_data():
+    sel = [
+        State_Energy.state,
+        State_Energy.year,
+        State_Energy.produced_renewable,
+        State_Energy.total_consumed,
+        State_Energy.population,
+        State_Energy.energy_price,
+        State_Energy.difference
+    ]
+
+    state_results = db.session.query(*sel).all()
+    return jsonify(state_results)
+    
