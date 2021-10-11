@@ -61,4 +61,19 @@ def get_state_energy_data():
 
     state_results = db.session.query(*sel).all()
     return jsonify(state_results)
-    
+
+# create us energy route
+@app.route("/api/us_energy")
+def get_us_energy_data():
+    sel = [
+        Us_Energy.year,
+        Us_Energy.produced_renewable,
+        Us_Energy.total_consumed,
+        Us_Energy.gdp,
+        Us_Energy.population,
+        Us_Energy.energy_price,
+        Us_Energy.difference
+    ]
+    us_results = db.session.query(*sel).all()
+    return jsonify(us_results)
+
