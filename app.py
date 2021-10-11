@@ -31,3 +31,15 @@ db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
 Base = automap_base()
+
+# reflect the tables
+Base.prepare(db.engine, reflect=True)
+
+# Save references to each table
+State_Energy = Base.classes.state_energy
+Us_Energy = Base.classes.us_energy
+
+# View routes
+@app.route("/")
+def landing_page():
+    return render_template("index.html", API_KEY=os.environ["API_KEY"])
