@@ -15,3 +15,9 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 load_dotenv()
 
+
+# create the flask app
+app = Flask(__name__, static_url_path="/static")
+
+# get the heroku database url from environment
+db_uri = os.environ["DATABASE_URL"]
