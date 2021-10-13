@@ -32,7 +32,7 @@
         <!--Navbar adjustments-->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">  
-                <a class="navbar-brand" href="/" >RENEWABLE ENERGY ANALYSIS & PREDICTIONS WITH MACHINE LEARNING</a>
+                <a class="navbar-brand" href="/" >RENEWABLE ENERGY & MACHINE LEARNING</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">    
                         <li class="nav-item">
@@ -55,11 +55,11 @@
             <div class="col-sm-12 col-md-4">
                 <h3 class="header">RENEWABLE ENERGY PRODUCTION</h3>
                 <br>
-                <p>Renewable energy production is generates energy that produces no greenhouse gas emissions from fossil fuels and reduces some types of air pollution. Over the last decade the exponemtial development of new technologies have made it more commercially viable to harness energy from solar, wind, and geothermal sources.</p>
+                <p>Renewable energy production generates energy that produces no greenhouse gas emissions from fossil fuels and reduces some types of air pollution. Over the last decade the exponential development of new technologies have made it more commercially viable to harness energy from solar, wind, and geothermal sources.</p>
                 <br>
-                <p>However, one of the biggest concerns in the field of renewable energy is power generation depending on natural resources that are uncontrollable by humans e.g wind and sunlight. Additionally, renewable energy requires the use of significant amounts of land.</p>
+                <p>However, one of the biggest concerns with renewable energy is that it can be too dependant on natural resources that are uncontrollable by humans e.g wind and sunlight. Additionally, renewable energy requires the use of significant amounts of land.</p>
                 <br>
-                <p>The Machine Learning Models use data from the <u><a href="https://www.eia.gov/" target="_blank">U.S. Energy Information Administration</a></u> to forecast the difference between Total Renewable Energy Production and Total Energy Consumption for the United States of America.</p>
+                <p>The machine learning models use data from the <u><a href="https://www.eia.gov/" target="_blank">U.S. Energy Information Administration</a></u> to forecast the difference between total renewable energy production and total energy consumption for the United States.</p>
             </div>
             <div class="col-sm-12 col-md-8" id="map"></div>
         </div>
@@ -69,7 +69,7 @@
         <!-- create new row for us visualizations -->
         <div class="row">
             <div class="col-md-12">
-                <h4 class="header" id="sec1">Annual Renewable Energy Production v Total Energy Consumption</h4>
+                <h4 class="header" id="sec1">Annual renewable energy production v Total energy consumption</h4>
                 <div id="plot1"></div>
             </div>
         </div>
@@ -77,7 +77,7 @@
         <hr>
         <div class="row">
             <div class="col-md-12">
-                <h4 class="header">Yearly Difference in Renewable Energy Production against Total Energy Consumption in the United States</h4>
+                <h4 class="header">Annual difference in renewable energy production & total energy consumption in the United States</h4>
                 <div id="plot"></div>
             </div>
         </div>
@@ -87,7 +87,7 @@
         <!-- create new row for the dropdown menu -->
         <div class="row">
             <div class="col-md-12">
-                <h4 class="header" id="sec2">Machine Learning Predictions for each State</h4>
+                <h4 class="header" id="sec2">Machine learning predictions for each State</h4>
                 <div class="well">
                     <h5>State</h5>
                     <select id="selDataset" onchange="stateChange(this.value)"></select>
@@ -109,22 +109,6 @@
         
         <hr>
 
-         <!-- new row for the questions and the data links -->
-         <div class="row">
-            <div class="col-md-7">
-                <h4>Our APIs</h4>
-                <p>Want a closer look at our project? Check out our data APIs with the following links:</p>
-                <li><a href="https://project3-renewable.herokuapp.com/api/state_energy" target="_blank">U.S. States' Energy Data<i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="https://project3-renewable.herokuapp.com/api/us_energy" target="_blank">U.S. National Energy Data<i class="fas fa-external-link-alt"></i></a></li>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <img src="../static/resources/data-pipe.jpg" width="100%">
-            </div>
-        </div>
-        
-        <hr>
-        
         <div class="row">
             <div class="col-md-5">
                 <div class="data">
@@ -136,7 +120,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-6">
                 <!-- header for the links -->
-                <h4 class="header2">Renewable Energy Data was obtained from:</h4>
+                <h4 class="header2">Data Sources</h4>
                 <!-- list of links -->
                 <li><a href="https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#Consumption" target="_blank">EIA.gov - U.S. Consumed Energy by State: 1960-2017 <i class="fas fa-external-link-alt"></i></a></li>
 
