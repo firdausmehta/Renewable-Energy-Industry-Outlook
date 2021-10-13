@@ -1,6 +1,14 @@
-# Renewable Energy Project
+# Outline
+Machine learning can increase the value of renewable energy. Using historical data that is available between the years 1969-2019 for renewable production and consumption values: Can we make accurate predictions about how the values will change for each state?
 
-### Data Sources
+# Hypothesis
+
+# Questions
+* How renewable energy production will change in the US by state?
+ 
+* Predict a state's ability to meet its Energy Consumption needs with Renewable Energy Production
+
+# Data Sources
 * https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#Consumption
 
 * https://www.eia.gov/state/seds/seds-data-complete.php
@@ -9,20 +17,9 @@
 
 * https://www.kaggle.com/washimahmed/usa-latlong-for-state-abbreviations
 
+# Visualisations
 
-### Description
-
-Machine learning can increase the value of renewable energy 
-
-Using historical data that is available between the years 1969-2019 for renewable production and consumption values: Can we make accurate predictions about how the values will change for each state?
-
-### Questions
-
-* How renewable energy production will change in the US by state?
- 
-* Predict a state's ability to meet its Energy Consumption needs with Renewable Energy Production
-
-### Analysis
+# Analysis
 
 * Clean and modify the data using Pandas and Jupyter Notebook
 
