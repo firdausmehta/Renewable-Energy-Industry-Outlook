@@ -21,7 +21,7 @@ load_dotenv()
 app = Flask(__name__, static_url_path="/static")
 
 # get the heroku database url from environment
-db_uri = os.environ["DATABASE_URL"] = <URL>
+db_uri = os.environ["DATABASE_URL"]
 
 # app configuration
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
