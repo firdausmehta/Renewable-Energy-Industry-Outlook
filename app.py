@@ -20,7 +20,7 @@ load_dotenv()
 app = Flask(__name__, static_url_path="/static")
 
 # get the heroku database url from environment
-db_uri = os.environ["DATABASE_URL"] 
+db_uri = os.environ["DATABASE_URL"] = <postgres://hktylkjerbdwkl:e1bd15053ecc8d56b95800050e69644adac592b247f4b33624af61be2637128f@ec2-35-175-17-88.compute-1.amazonaws.com:5432/dfgj4g26j6qvbd>
 
 # app configuration
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
