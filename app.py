@@ -11,6 +11,7 @@ from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -18,9 +19,6 @@ load_dotenv()
 
 # create the flask app
 app = Flask(__name__, static_url_path="/static")
-
-# get the heroku database url from environment
-db_uri = os.environ["DATABASE_URL"]
 
 # app configuration
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
