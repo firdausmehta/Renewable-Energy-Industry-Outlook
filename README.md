@@ -7,7 +7,7 @@ The machine learning models use data from the U.S. Energy Information Administra
 
 Using historical data from 1970 up to 2020 for renewable energy production and consumption in the United States of America; can we make accurate predictions on how these values will change for each of its states? 
 
-# Questions
+# Research Questions
 * How renewable energy production has changed and will continue to change across the United States?
  
 * Can we use machine learning to predict each states capability to meet its energy consumption needs with renewable energy production?
