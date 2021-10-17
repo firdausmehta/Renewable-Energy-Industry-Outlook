@@ -3,6 +3,8 @@ As someone who works as an analyst in the oil and gas industry I understand that
 
 Pollution levels from greenhouse gases has reached record levels and over the past 2 years millions of people around the world took to the streets to force policy makers to face up to the climate crisis. The world still heavily relies on fossil fuels and even continues subsidising them.
 
+The machine learning models use data from the U.S. Energy Information Administration to forecast the difference between total renewable energy production and total energy consumption for the United States.
+
 Using historical data from 1970 up to 2020 for renewable energy production and consumption in the United States of America; can we make accurate predictions on how these values will change for each of its states? 
 
 # Questions
