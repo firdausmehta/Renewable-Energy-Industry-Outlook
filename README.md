@@ -1,5 +1,5 @@
 # Outline
-As someone who works as an analyst in the oil and gas industry I understand that now more than ever there is a global push to leave the fossil fuel age behind. Fossil fuels such as oil, coal, and natural gas are available in limited quantities only. As we keep extracting them, they may soon sun out as they do not replenish as quickly as we use them. This is where the idea and inspiration for this research project stemmed from. 
+As someone who works as an analyst in the oil and gas industry I understand that now more than ever there is a global push to leave the fossil fuel age behind. Fossil fuels such as oil, coal, and natural gas are available in limited quantities only. As we keep extracting them, they may soon run out as they do not replenish as quickly as we use them. This is where the idea and inspiration for this research project stemmed from. 
 
 Pollution levels from greenhouse gases has reached record levels and over the past 2 years millions of people around the world took to the streets to force policy makers to face up to the climate crisis. The world still heavily relies on fossil fuels and even continues subsidising them.
 
