@@ -8,7 +8,7 @@ Using historical data from 1970 up to 2020 for renewable energy production and c
 # Questions
 * How renewable energy production has changed and will continue to change across the United States?
  
-* Can we use machine learning to predict a each states capability to meet its energy consumption needs with renewable energy production
+* Can we use machine learning to predict a each states capability to meet its energy consumption needs with renewable energy production?
 
 # Visualisations
 
