@@ -12,6 +12,11 @@ Using historical data from 1970 up to 2020 for renewable energy production and c
  
 * Can we use machine learning to predict each states capability to meet its energy consumption needs with renewable energy production?
 
+# Visualisations
+![download (1)](https://user-images.githubusercontent.com/80393628/137627306-7b0d3820-f3b7-4967-8243-1e91414b8d52.png) ![download](https://user-images.githubusercontent.com/80393628/137627307-367945ba-83a4-4aff-ad6b-c5287b6d002b.png)
+
+
+
 # Analysis
 * The data was mostly linear, over the years (1970-2017); population, energy price, renewable production, GDP numbers were all increasing
 
